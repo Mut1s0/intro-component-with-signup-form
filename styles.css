@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+
+    /*
+        Mobile Width: 375px;
+        Desktop Width: 1440px 
+    */
+
+
+    /* Primary Colors */
+    --clr-primary-red: hsl( 0, 100%, 74% );
+    --clr-primary-green: hsl( 154, 59%, 51% );
+
+
+    /* Accent Colors */
+    --clr-accent-blue: hsl( 248, 32%, 49% );
+
+
+    /* Neutral Colors */
+    --clr-neutral-dark-blue: hsl( 249, 10%, 26% );
+    --clr-neutral-grayish-blue: hsl( 246, 25%, 77% );
+
+
+    /* Font Family */
+    --ff: 'Poppins', sans-serif;
+
+
+    /* Font Weight */
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+}
+
+
+/* CSS RESETS */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* 
+  Typographic tweaks!
+  - Add accessibility Line-Height
+  - Improve yexy rendering
+*/
+
+body {
+ line-height: 1.7;
+ -webkit-font-smoothing: antialiased;
+}
+
+/* Improve media defaults */
+
+img,
+picture,
+video,
+canvas,
+svg {
+ display: block;
+ max-width: 100%;
+}
+
+/* Remove built in form typography */
+
+input,
+button,
+textarea,
+select {
+ font: inherit;
+}
+
+/* Avoid text overflow */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ overflow-wrap: break-word;
+}
