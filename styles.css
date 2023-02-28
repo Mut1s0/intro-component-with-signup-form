@@ -198,3 +198,48 @@ button {
   font-weight: var(--fw-600);
   text-decoration: none;
 }
+
+@media only screen and ( min-width: 992px ) {
+  .container {
+    max-width: 1292px;
+    display: flex;
+    align-items: center;
+    margin: 5rem auto;
+    background-image: url( ./images/bg-intro-desktop.png );
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .content {
+    width: 50%;
+    margin: 0 5rem;
+    text-align: start;
+  }
+
+  .content--header {
+    width: 70%;
+    margin-bottom: 1.5rem;
+  }
+
+  .content--paragraph {
+    margin: 0;
+    width: 95%;
+  }
+
+  .content--form {
+    width: 50%;
+    margin-right: 2rem;
+  }
+
+  input{
+    width: 80%;
+  }
+
+  button {
+    width: 78%;
+  }
+
+  .footer {
+    font-size: 0.65rem;
+  }
+}
