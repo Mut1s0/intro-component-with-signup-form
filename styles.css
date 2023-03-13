@@ -98,148 +98,99 @@ h6 {
 }
 
 body {
-  font-size: 1rem;
-  font-family: var(--ff);
   background: var(--clr-primary-red);
-  background-image: url( ./images/bg-intro-mobile.png );
+  background-image: url( ./images/bg-intro-desktop.png );
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  font-family: var(--ff);
 }
 
-.container {
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
+.row {
+  height: 100vh;
 }
 
 .content {
-  text-align: center;
+  color: white;
+  max-width: 33.5rem;
   margin: 0 auto;
-  font-size: 0.99rem;
 }
 
-.content--header {
-  margin-top: 2rem;
+.content > h1 {
+  font-weight: var(--fw-700);
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
-.content--paragraph {
-  width: 20rem;
-  margin: 2rem auto;
-  font-weight: var(--fw-400);
-}
-
-.content--form {
+.form--content {
   text-align: center;
+  
 }
 
-.content--form > p {
-  background-color: var(--clr-accent-blue);
-  margin: 2.5rem auto;
-  padding: 1.2rem 5.5rem;
-  border-radius: 1rem;
-  font-weight: normal;
-  cursor: pointer;
+.form--content > p {
+  background: var(--clr-accent-blue);
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  color: white;
+  border-radius: 0.6rem;
 }
 
-.content--form > p > span {
+.form--content > p > span {
   font-weight: var(--fw-700);
 }
 
 form {
+  max-width: 40rem;
+  background: white;
+  padding: 3rem;
   margin: 0 auto;
-  background-color: white;
-  border-radius: 0.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  border-radius: 0.6rem;
 }
 
-input {
+form > div {
   padding: 1rem;
-  width: 22rem;
-  margin: 0.6rem 0;
-  border: 1px solid var(--clr-neutral-grayish-blue);
-  border-radius: 0.5rem;
 }
 
-input[type=password] {
-  margin-bottom: 2rem;
-}
-
-::placeholder {
-  font-weight: var(--fw-700);
-}
-
-button {
-  display: inline-block;
-  width: 90%;
-  padding: 0.9rem;
-  background: var(--clr-primary-green);
-  border: none;
-  border-radius: 0.5rem;
-  color: white;
-  font-weight: var(--fw-700);
-  cursor: pointer;
-}
-
-.footer {
+form > p {
   color: var(--clr-neutral-grayish-blue);
-  width: 69%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
-.footer > p > a {
-  color: var(--clr-primary-red);
-  font-weight: var(--fw-600);
+form > p > a {
+  color: red;
+  font-weight: var(--fw-700);
   text-decoration: none;
 }
 
-@media only screen and ( min-width: 992px ) {
-  .container {
-    max-width: 1292px;
-    display: flex;
-    align-items: center;
-    margin: 5rem auto;
-    background-image: url( ./images/bg-intro-desktop.png );
+button {
+  border: none;
+  text-transform: uppercase;
+  background: var(--clr-primary-green);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+::placeholder {
+  font-weight: var(--fw-600);
+}
+
+@media only screen and ( max-width: 768px ) {
+  body {
+    background: var(--clr-primary-red);
+    background-image: url( ./images/bg-intro-mobile.png );
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    font-family: var(--ff);
   }
 
   .content {
-    width: 50%;
-    margin: 0 5rem;
-    text-align: start;
+    text-align: center;
   }
 
-  .content--header {
-    width: 70%;
-    margin-bottom: 1.5rem;
-  }
-
-  .content--paragraph {
-    margin: 0;
-    width: 95%;
-  }
-
-  .content--form {
-    width: 50%;
-    margin-right: 2rem;
-  }
-
-  input{
-    width: 80%;
-  }
-
-  button {
-    width: 78%;
-  }
-
-  .footer {
-    font-size: 0.65rem;
+  form > p {
+    font-size: 0.7rem;
   }
 }
